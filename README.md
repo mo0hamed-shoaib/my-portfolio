@@ -1,150 +1,220 @@
-# Next.js Portfolio
+# ✨ Next.js Portfolio
 
-This project is a modern, highly customizable portfolio website built with Next.js, React, and Tailwind CSS. It showcases a component-driven architecture, featuring reusable UI elements and sections such as About, Projects, Contact, and more. The codebase leverages TypeScript for type safety, Radix UI for accessible and consistent UI primitives, and a collection of custom hooks and utilities to enhance developer productivity. Designed for scalability and maintainability, this portfolio template is ideal for developers who want a professional, performant, and visually appealing way to present their work and skills online.
+<div align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+</div>
+
+<div align="center">
+  <h3>🚀 A modern, highly customizable portfolio website</h3>
+  <p>Built with cutting-edge technologies for performance, accessibility, and developer experience</p>
+</div>
 
 ---
 
-## 📁 Folder Structure
+## 🎯 Overview
+
+This portfolio showcases a **component-driven architecture** with reusable UI elements, featuring sections for About, Projects, Contact, and more. Built with scalability and maintainability in mind, it's the perfect foundation for developers who want a professional, performant way to present their work online.
+
+### ✨ Key Highlights
+
+- 🎨 **Modern Design** - Clean, responsive UI with smooth animations
+- 🔧 **Type-Safe** - Full TypeScript support for robust development
+- 🎭 **Accessible** - Built with Radix UI primitives for inclusive design
+- 🚀 **Performance** - Optimized with Next.js server-side rendering
+- 🧩 **Modular** - Reusable components and custom hooks
+
+---
+
+## 🛠️ Tech Stack
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+**Frontend**
+- Next.js 14+ (App Router)
+- React 18+ with Hooks
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Framer Motion for animations
+
+</td>
+<td align="center" width="50%">
+
+**UI & UX**
+- Radix UI primitives
+- Custom component library
+- Responsive design
+- Dark/Light theme support
+- Accessibility-first approach
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📁 Project Structure
 
 ```
 my-portfolio/
-├── .git/                   # Git version control data
-├── .next/                  # Next.js build output (auto-generated)
-├── app/
-│   ├── globals.css         # Global styles
-│   ├── layout.tsx          # Main layout component
-│   └── page.tsx            # Main page component
-├── components/
+├── 📱 app/
+│   ├── globals.css         # Global styles & theme
+│   ├── layout.tsx          # Root layout component
+│   └── page.tsx            # Home page
+├── 🧩 components/
 │   ├── About.tsx           # About section
-│   ├── Contact.tsx         # Contact section
-│   ├── Footer.tsx          # Footer component
-│   ├── Hero.tsx            # Hero/landing section
-│   ├── MouseTracker.tsx    # Mouse tracking effect
+│   ├── Contact.tsx         # Contact form & info
+│   ├── Footer.tsx          # Site footer
+│   ├── Hero.tsx            # Landing hero section
+│   ├── MouseTracker.tsx    # Interactive mouse effects
 │   ├── Navigation.tsx      # Navigation bar
-│   ├── Projects.tsx        # Projects showcase
+│   ├── Projects.tsx        # Project showcase
 │   ├── TechIcon.tsx        # Technology icons
 │   └── ui/                 # Reusable UI components
-│       ├── accordion.tsx
-│       ├── alert-dialog.tsx
-│       ├── alert.tsx
-│       ├── aspect-ratio.tsx
-│       ├── avatar.tsx
-│       ├── badge.tsx
-│       ├── breadcrumb.tsx
-│       ├── button.tsx
-│       ├── calendar.tsx
-│       ├── card.tsx
-│       ├── carousel.tsx
-│       ├── chart.tsx
-│       ├── checkbox.tsx
-│       ├── collapsible.tsx
-│       ├── command.tsx
-│       ├── context-menu.tsx
-│       ├── dialog.tsx
-│       ├── drawer.tsx
-│       ├── dropdown-menu.tsx
-│       ├── form.tsx
-│       ├── hover-card.tsx
-│       ├── input-otp.tsx
-│       ├── input.tsx
-│       ├── label.tsx
-│       ├── menubar.tsx
-│       ├── navigation-menu.tsx
-│       ├── pagination.tsx
-│       ├── popover.tsx
-│       ├── progress.tsx
-│       ├── radio-group.tsx
-│       ├── resizable.tsx
-│       ├── scroll-area.tsx
-│       ├── select.tsx
-│       ├── separator.tsx
-│       ├── sheet.tsx
-│       ├── skeleton.tsx
-│       ├── slider.tsx
-│       ├── sonner.tsx
-│       ├── switch.tsx
-│       ├── table.tsx
-│       ├── tabs.tsx
-│       ├── textarea.tsx
-│       ├── toast.tsx
-│       ├── toaster.tsx
-│       ├── toggle-group.tsx
-│       ├── toggle.tsx
-│       ├── tooltip.tsx
-│       └── ...              # More UI components
-├── hooks/
-│   └── use-toast.ts        # Custom React hook for toast notifications
-├── lib/
+│       ├── button.tsx      # Button variants
+│       ├── card.tsx        # Card components
+│       ├── dialog.tsx      # Modal dialogs
+│       ├── input.tsx       # Form inputs
+│       └── ...             # 40+ UI components
+├── 🪝 hooks/
+│   └── use-toast.ts        # Toast notification hook
+├── 📚 lib/
 │   └── utils.ts            # Utility functions
-├── node_modules/           # Node.js dependencies (auto-generated)
-├── .eslintrc.json          # ESLint configuration
-├── .gitignore              # Git ignore rules
-├── components.json         # Components configuration
-├── next.config.js          # Next.js configuration
-├── package-lock.json       # Dependency lock file
-├── package.json            # Project metadata and dependencies
-├── postcss.config.js       # PostCSS configuration
-├── tailwind.config.ts      # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── next-env.d.ts           # Next.js TypeScript environment
+├── ⚙️ Config Files
+│   ├── next.config.js      # Next.js configuration
+│   ├── tailwind.config.ts  # Tailwind customization
+│   └── tsconfig.json       # TypeScript settings
 ```
 
 ---
 
-## 🚀 Features
+## 🚀 Quick Start
 
-- **Next.js** for server-side rendering and routing
-- **React** for building UI components
-- **Tailwind CSS** for utility-first styling
-- **Radix UI** and custom UI components for accessibility and design consistency
-- **TypeScript** for type safety
-- **Reusable hooks** (e.g., `use-toast`)
-- **Component-driven structure** for scalability and maintainability
+### Prerequisites
+- Node.js 18.0+ 
+- npm or yarn
 
----
+### Installation
 
-## 🛠️ Getting Started
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd my-portfolio
+   ```
 
-1. **Install dependencies:**
+2. **Install dependencies**
    ```bash
    npm install
+   # or
+   yarn install
    ```
-2. **Run the development server:**
+
+3. **Start development server**
    ```bash
    npm run dev
-   ```
-3. **Build for production:**
-   ```bash
-   npm run build
+   # or
+   yarn dev
    ```
 
----
+4. **Open in browser**
+   ```
+   http://localhost:3000
+   ```
 
-## 📦 Main Dependencies
+### Build Commands
 
-- `next`
-- `react`
-- `tailwindcss`
-- `@radix-ui/*`
-- `framer-motion`
-- `zod`
-- `react-hook-form`
-- `date-fns`
-- `recharts`
-- _(see `package.json` for the full list)_
+```bash
+# Development
+npm run dev
 
----
+# Production build
+npm run build
 
-## 📚 Customization
+# Start production server
+npm start
 
-- Add or modify UI components in `components/ui/`
-- Update global styles in `app/globals.css`
-- Add new pages or layouts in the `app/` directory
-- Add custom hooks in `hooks/`
-- Place utility functions in `lib/`
+# Lint code
+npm run lint
+```
 
 ---
 
-## 📝 License
+## 🎨 Customization Guide
 
-This project is licensed under the MIT License.
+### 🎭 Components
+- **UI Components**: Modify `components/ui/` for design system changes
+- **Sections**: Update `components/` for content sections
+- **Animations**: Customize Framer Motion configs in components
+
+### 🎨 Styling
+- **Global Styles**: Edit `app/globals.css`
+- **Theme**: Configure `tailwind.config.ts`
+- **Colors**: Update CSS variables in globals.css
+
+### 🔧 Configuration
+- **Metadata**: Update `app/layout.tsx`
+- **Routes**: Add pages in `app/` directory
+- **Utilities**: Extend `lib/utils.ts`
+
+---
+
+## 📦 Dependencies
+
+<details>
+<summary><strong>Core Dependencies</strong></summary>
+
+- `next` - React framework
+- `react` - UI library
+- `typescript` - Type safety
+- `tailwindcss` - CSS framework
+- `framer-motion` - Animations
+- `@radix-ui/*` - Accessible primitives
+- `zod` - Schema validation
+- `react-hook-form` - Form handling
+- `date-fns` - Date utilities
+- `recharts` - Data visualization
+
+</details>
+
+<details>
+<summary><strong>Development Dependencies</strong></summary>
+
+- `eslint` - Code linting
+- `prettier` - Code formatting
+- `@types/*` - Type definitions
+- `autoprefixer` - CSS prefixing
+- `postcss` - CSS processing
+
+</details>
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+  <p>Made with ❤️ and modern web technologies</p>
+  <p>
+    <a href="#-quick-start">Get Started</a> •
+    <a href="#-customization-guide">Customize</a> •
+    <a href="#-contributing">Contribute</a>
+  </p>
+</div>
