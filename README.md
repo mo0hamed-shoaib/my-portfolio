@@ -1,6 +1,6 @@
 # Next.js Portfolio
 
-A modern, component-driven portfolio web application built with Next.js, React, Tailwind CSS, and a rich set of UI components.
+This project is a modern, highly customizable portfolio website built with Next.js, React, and Tailwind CSS. It showcases a component-driven architecture, featuring reusable UI elements and sections such as About, Projects, Contact, and more. The codebase leverages TypeScript for type safety, Radix UI for accessible and consistent UI primitives, and a collection of custom hooks and utilities to enhance developer productivity. Designed for scalability and maintainability, this portfolio template is ideal for developers who want a professional, performant, and visually appealing way to present their work and skills online.
 
 ---
 
